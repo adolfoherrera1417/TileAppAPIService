@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tile-api-deployment
+  labels:
+    app: tile-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tile-api
+  template:
+    metadata:
+      labels:
+        app: tile-api
+    spec:
+      containers:
+      - name: tile-api-main
+        image: adolfoherrera1417/tile-api:1.0
+        ports:
+        - containerPort: 4001
