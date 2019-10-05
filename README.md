@@ -1,2 +1,2 @@
 # TileAppAPIService
-Created By: Adolfo
+Created By:
